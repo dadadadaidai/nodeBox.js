@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8" /> 
+    <title>nodeBox.js</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="third/font-awesome-4.0.3/css/font-awesome.min.css" type="text/css" media="screen">
+
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    
+    <script type="text/javascript" src="js/define.js"></script>
+    <script type="text/javascript" src="js/bezier.js"></script>
+    <script type="text/javascript" src="js/parameter.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+    
+</head>
+
+<body>
+
+    <div id='container'>
+
+      <div id='main'>
+          <canvas id="grid" width="1920" height="1080"></canvas>
+          <canvas id="c1" width="1920" height="1080"></canvas>
+      </div>
+
+      <!-- for debag  -->
+      <div id='titleBox'>
+        <div id='title'> NodeBox.js</div>
+        <div id='caption'> Visual-Flow Like UI </div>
+        <div id='info'> author: da(3+2i) </div>       
+    </div>
+
+    <div id='toolBox'>
+      <button id="toggleFullscreen" onclick="goFullScreen();"><i class="fa fa-arrows-alt fa-2x"></i></button>
+    </div>
+
+  <div id='setting' class='debug'>
+      <div class='debugTitle'>SETTING</div>
+      <div class="toolGroup">
+          <div class="slider" id="slider1_line">
+            <div class="slider-name">lineWidth</div>
+            <input type="text" class="slider-value" id="slider1-value" readonly/>
+        </div>
+        <div class="slider" id="slider2_line">
+            <div class="slider-name">handleLength</div>
+            <input type="text" class="slider-value" id="slider2-value" readonly/>
+        </div>
+      </div>
+      <div class="toolGroup">  
+    <div class="slider" id="slider3_line">
+        <div class="slider-name">ViewScale</div>
+        <input type="text" class="slider-value" id="slider3-value" readonly/>
+    </div>
+    <div class="slider" id="slider4_line">
+        <div class="slider-name">boxWidth</div>
+        <input type="text" class="slider-value" id="slider4-value" readonly/>
+      </div>
+    </div>
+</div>
+
+</div>
+    <!-- <div id='log' class='debug'>
+      <div class='textfield'>
+        Debug Console<br>
+        1 <br>
+        2 <br>
+        3 <br>
+        4 <br>
+        5 <br>
+        6 <br>
+        7 <br>
+        8 <br>
+        9 <br>
+        10 <br>
+      </div>
+  </div> -->
+</body>
+
+</html>
